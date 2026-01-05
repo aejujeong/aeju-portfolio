@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JEONG AEJU | ARCHIVE 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+      
+      :root {
+        --accent-blue: #2962FF; 
+        --bg-dark-gray: #0A0A0A; 
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-dark-gray);
+        color: #FFFFFF;
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* Subtle Grain Animation */
+      .grain-overlay {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.045;
+        pointer-events: none;
+        z-index: 9999;
+        animation: subtle-shift 8s steps(5) infinite;
+      }
+
+      @keyframes subtle-shift {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(-1%, -1%); }
+        50% { transform: translate(1%, 0.5%); }
+        75% { transform: translate(-0.5%, 1%); }
+      }
+
+      /* Smooth Scroll & Snap Setup */
+      .scroll-container {
+        height: 100vh;
+        height: 100dvh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+      }
+      .scroll-container::-webkit-scrollbar { display: none; }
+      
+      section {
+        scroll-snap-align: start;
+        height: 100vh;
+        height: 100dvh;
+        width: 100%;
+        position: relative;
+        overflow-y: auto;
+      }
+
+      .word-keep {
+        word-break: keep-all;
+      }
+
+      /* Custom Hover States */
+      .hover-reveal {
+        transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      @media (max-width: 768px) {
+        section {
+          scroll-snap-align: none;
+          height: auto;
+          min-height: 100vh;
+        }
+        .scroll-container {
+          scroll-snap-type: none;
+          overflow-y: auto;
+          height: auto;
+        }
+        body {
+          overflow-y: auto;
+        }
+      }
+
+      ::selection {
+        background: var(--accent-blue);
+        color: white;
+      }
+
+      h1, h2, h3 {
+        will-change: transform, opacity;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="grain-overlay"></div>
+    <div id="root"></div>
+  </body>
+</html>
