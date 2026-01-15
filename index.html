@@ -27,7 +27,7 @@
         text-rendering: optimizeLegibility;
       }
 
-      /* Subtle Grain Animation */
+      /* Subtle Grain Animation Overlay */
       .grain-overlay {
         position: fixed;
         top: -50%;
@@ -48,7 +48,7 @@
         75% { transform: translate(-0.5%, 1%); }
       }
 
-      /* Smooth Scroll & Snap Setup */
+      /* Scroll Snap Configuration */
       .scroll-container {
         height: 100vh;
         height: 100dvh;
@@ -67,15 +67,12 @@
         width: 100%;
         position: relative;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
       }
 
       .word-keep {
         word-break: keep-all;
-      }
-
-      /* Custom Hover States */
-      .hover-reveal {
-        transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
       }
 
       @media (max-width: 768px) {
@@ -98,18 +95,15 @@
         background: var(--accent-blue);
         color: white;
       }
-
-      h1, h2, h3 {
-        will-change: transform, opacity;
-      }
     </style>
     <script type="importmap">
     {
       "imports": {
         "react": "https://esm.sh/react@^19.2.3",
+        "react-dom": "https://esm.sh/react-dom@^19.2.3",
         "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+        "framer-motion": "https://esm.sh/framer-motion@^12.26.2",
+        "react/": "https://esm.sh/react@^19.2.3/"
       }
     }
     </script>
@@ -117,7 +111,6 @@
   <body>
     <div class="grain-overlay"></div>
     <div id="root"></div>
-    <!-- 앱 실행을 위한 엔트리 포인트 추가 -->
     <script type="module" src="./index.tsx"></script>
   </body>
 </html>
