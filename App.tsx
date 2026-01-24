@@ -354,7 +354,7 @@ const App: React.FC = () => {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} variants={containerVariants} className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
           
           <div className="md:col-span-4 lg:col-span-3 border-l border-white/10 pl-6 lg:pl-10 py-4">
-            <motion.span variants={itemVariants} className="text-[#2962FF] font-mono text-[9px] md:text-xs font-bold mb-8 block uppercase">INDEX_01</motion.span>
+            <motion.span variants={itemVariants} className="text-[#2962FF] font-mono text-[9px] md:text-xs font-bold mb-8 block uppercase">PROFILE</motion.span>
             
             <motion.div 
               variants={revealVariants}
@@ -421,8 +421,12 @@ const App: React.FC = () => {
             className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-14 gap-6"
           >
             <motion.div variants={itemVariants} className="border-l-4 border-[#2962FF] pl-5 md:pl-6">
-              <span className="text-[#2962FF] font-mono text-[9px] md:text-xs font-bold block mb-2 uppercase">INDEX_02</span>
+     
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none">WORKS</h2>
+<div className="mt-6 space-y-1 border-t border-white/10 pt-6">
+                <p className="text-xs md:text-sm font-bold text-white/80 uppercase tracking-[0.3em]">편집·음악·음향 100%</p>
+                <p className="text-xs md:text-sm font-bold text-white/80 uppercase tracking-[0.3em]">구성 30%</p>
+              </div>
             </motion.div>
             <motion.div variants={itemVariants} className="text-left md:text-right opacity-30 text-[7px] md:text-[9px] font-bold tracking-widest uppercase">Visual Archive<br className="hidden md:block"/>© 2026 Edition</motion.div>
           </motion.div>
