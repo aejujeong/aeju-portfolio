@@ -77,7 +77,7 @@ const DEFAULT_DATA: SiteData =
       "id": 1,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=NSqZmrp85es&t=608s"
+      "url": "https://www.youtube.com/watch?v=bgrXlaImNtU"
     },
     {
       "id": 2,
@@ -95,37 +95,37 @@ const DEFAULT_DATA: SiteData =
       "id": 4,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=N8N_RjaiIOA"
+      "url": "https://www.youtube.com/watch?v=NSqZmrp85es&t=608s"
     },
     {
       "id": 5,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=OGpt5pN3VpY"
+      "url": "https://www.youtube.com/watch?v=NmtQRV3WRAs&t=502s"
     },
     {
       "id": 6,
-      "title": "판문점 다큐멘터리",
+      "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=xGyEeIiKheY"
+      "url": "https://www.youtube.com/watch?v=Z5iEF6aP6BE&t=873s"
     },
     {
       "id": 7,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "url": "https://www.youtube.com/watch?v=N8N_RjaiIOA"
     },
     {
       "id": 8,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "url": "https://www.youtube.com/watch?v=OGpt5pN3VpY"
     },
     {
       "id": 9,
       "title": "",
       "img": "",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "url": "https://www.youtube.com/watch?v=xGyEeIiKheY"
     }
   ]
 }
