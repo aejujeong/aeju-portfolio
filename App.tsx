@@ -52,6 +52,11 @@ const DEFAULT_DATA: SiteData =
   "bio": "복잡한 정보를 누구나 이해할 수 있는 영상으로 만듭니다.\n단순한 나열이 아닌 구조와 맥락을 중심으로 편집합니다.",
   "career": [
     {
+      "date": "2026",
+      "title": "어썸엔터테인먼트",
+      "role": "지식인사이드 편집"
+    },
+    {
       "date": "2022 — 2025",
       "title": "한국탐사저널리즘센터",
       "role": "뉴스 및 다큐멘터리 편집 총괄"
@@ -370,6 +375,10 @@ const App: React.FC = () => {
 
             <div className="space-y-8 md:space-y-12">
               <motion.div variants={itemVariants}>
+                <p className="text-[7px] md:text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase mb-3">Name</p>
+                 <p className="text-xl md:text-2xl font-black tracking-tight word-keep">정애주</p>
+                 </motion.div>
+                 <motion.div variants={itemVariants}>
                 <p className="text-[7px] md:text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase mb-3">Education</p>
                 <p className="text-xl md:text-2xl font-black tracking-tight word-keep">서울예술대학교</p>
                 <p className="text-sm md:text-base text-white/50 mt-2 font-medium word-keep">방송영상과 수석 졸업</p>
