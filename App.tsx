@@ -108,6 +108,24 @@ const DEFAULT_DATA: SiteData =
       "title": "판문점 다큐멘터리",
       "img": "",
       "url": "https://www.youtube.com/watch?v=xGyEeIiKheY"
+    },
+    {
+      "id": 7,
+      "title": "",
+      "img": "",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "id": 8,
+      "title": "",
+      "img": "",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "id": 9,
+      "title": "",
+      "img": "",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
   ]
 }
@@ -355,7 +373,7 @@ const App: React.FC = () => {
       </section>
 
       {/* SECTION 2: BIOGRAPHY (CAREER) */}
-      <section id="profile" className="flex flex-col justify-center px-6 md:px-16 lg:pl-48 lg:pr-12 bg-[#0A0A0A] min-h-screen py-20 md:py-0">
+      <section id="profile" className="flex flex-col px-6 md:px-16 lg:pl-48 lg:pr-12 bg-[#0A0A0A] min-h-screen py-20 md:py-32">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} variants={containerVariants} className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
           
           <div className="md:col-span-4 lg:col-span-3 border-l border-white/10 pl-6 lg:pl-10 py-4">
@@ -420,7 +438,7 @@ const App: React.FC = () => {
       </section>
 
       {/* SECTION 3: WORKS */}
-      <section id="works" className="flex flex-col justify-center px-6 md:px-12 lg:px-32 bg-[#0A0A0A] min-h-screen py-20 md:py-0">
+      <section id="works" className="flex flex-col px-6 md:px-12 lg:px-32 bg-[#0A0A0A] min-h-screen py-15 md:py-50">
         <div className="max-w-6xl w-full mx-auto">
           <motion.div 
             initial="hidden" 
@@ -431,7 +449,7 @@ const App: React.FC = () => {
           >
             <motion.div variants={itemVariants} className="border-l-4 border-[#2962FF] pl-5 md:pl-6">
      
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none">WORKS</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-normal py-2">WORKS</h2>
 <div className="mt-6 space-y-1 border-t border-white/10 pt-6">
                 <p className="text-xs md:text-sm font-bold text-white/80 uppercase tracking-[0.3em]">편집·음악·음향 100%</p>
                 
