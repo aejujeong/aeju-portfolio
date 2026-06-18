@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { motion, Variants, AnimatePresence } from 'framer-motion';
 
 // --- Types & Interfaces ---
@@ -682,6 +683,7 @@ const App: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <Analytics />
     </main>
   );
 };
